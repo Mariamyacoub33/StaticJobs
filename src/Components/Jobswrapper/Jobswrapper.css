@@ -1,0 +1,13 @@
+#Jobswrapperdiv{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media only screen and (max-width:450px){
+    #Jobswrapperdiv{
+        gap: 40px;
+    }
+}

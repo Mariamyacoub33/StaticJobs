@@ -1,0 +1,129 @@
+.Jobitemdiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  box-shadow: 10px 10px 5px 0px rgba(207,190,190,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(207,190,190,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(207,190,190,0.75);
+}
+
+.Jobinfo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 50%;
+    gap: 4px;
+}
+
+.LastRowInfo{
+    color: rgb(191,190,190);
+    font-size: 12px;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li:first-child {
+    list-style-type: none;
+}
+
+p {
+margin: 0;
+}
+
+.Positions{
+    font-weight: bolder;
+}
+
+.FirstRowInfo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.CompaniesName{
+    color: hsl(180, 52%, 37%);
+    font-weight: bold;
+}
+
+.Newlabel{
+    background-color: hsl(180, 52%, 37%);
+    color: white;
+    width: auto;
+    padding: 4px 8px 4px 8px;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.Featuredlabel{
+    background-color: hsl(180, 14%, 20%);
+    color: white;
+    padding: 4px 8px 4px 8px;
+    width: auto;
+    display: inline-flex;
+    border-radius: 20px;
+}
+
+.Qualifactions{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.Qualifactions > button {
+border: none;
+background-color: hsl(180, 52%, 96%);
+padding: 6px;
+font-weight: bold;
+color: hsl(180, 29%, 50%);
+}
+
+@media only screen and (max-width:450px){
+    .Jobitemdiv{
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+        height: 220px;
+        gap: 30px;
+    }
+
+    .logo {
+        width: 45px;
+        position: absolute;
+        top: -28px;
+    }
+
+    .Jobinfo{
+        width: 100%;
+        gap: 10px;
+    }
+
+    .LastRowInfo{
+        width: 100%;
+    }
+
+    .Qualifactions{
+        border-top: 1px solid black;
+        width: 100%;
+        flex-grow: 1;
+        margin-left: 0px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Qualifactions > button {
+        font-weight: 600;
+        height: 50%;
+    }
+
+}
