@@ -93,7 +93,7 @@ color: hsl(180, 29%, 50%);
         align-items: start;
         position: relative;
         height: 220px;
-        gap: 30px;
+        gap: 15px;
     }
 
     .logo {
